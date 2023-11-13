@@ -111,7 +111,7 @@ const AudioCapture = () => {
             <audio ref={audioRef} style={{ display: 'none' }} />
           </div>
         </> :
-        <div className="upload-button" onClick={handleUpload}>Select audio file</div>}
+        <button className="upload-button" onClick={handleUpload}>Select audio file</button>}
     </div>
   );
 };

@@ -1,10 +1,10 @@
 .audio-container {
     position: relative;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
     text-align: center;
-    align-items: center;
+    /* align-items: center; */
     min-height: 55vh;
     animation: scale-in 0.3s ease-in;
 }
@@ -34,11 +34,13 @@
     border-radius: 8px;
     background-color: lightseagreen;
     cursor: pointer;
+    width: fit-content;
 }
 
 .waveform {
     width: 90%;
     height: min-content;
+    margin-left: 6%;
 }
 
 .audio-details {
