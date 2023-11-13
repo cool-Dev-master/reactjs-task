@@ -19,7 +19,7 @@ const AudioCapture = () => {
           container: "#waveform",
           waveColor: 'blue',
           progressColor: 'red',
-          cursorColor: 'transparent',
+          cursorColor: 'red',
         });
 
         waveformRef.current.load(audioElement.src);
