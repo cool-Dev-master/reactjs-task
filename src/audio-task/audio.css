@@ -1,0 +1,125 @@
+.audio-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    min-height: 55vh;
+    animation: scale-in 0.3s ease-in;
+}
+
+@keyframes scale-in {
+    0% {
+        transform: scale(0);
+    }
+
+    80% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.audio-container h1 {
+    color: cornflowerblue;
+}
+
+.audio-container .upload-button {
+    border: none;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: lightseagreen;
+    cursor: pointer;
+}
+
+.waveform {
+    width: 90%;
+    height: min-content;
+}
+
+.audio-details {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.play-pause-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.play-button,
+.pause-button,
+.stop-button,
+.delete-button {
+    cursor: pointer;
+}
+
+.play-button {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 35px solid green;
+    border-bottom: 20px solid transparent;
+}
+
+.pause-button {
+    position: absolute;
+    border-left: 10px solid red;
+    border-right: 10px solid red;
+    width: 10px;
+    height: 30px;
+}
+
+.stop-button {
+    position: relative;
+    border: 1px solid red;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    right: -50px;
+}
+
+.delete-button {
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: orangered;
+    width: fit-content;
+}
+
+.play-button::before {
+    content: "Play";
+    position: relative;
+    right: 35px;
+    top: 20px;
+    font-weight: 600;
+}
+
+.pause-button::before {
+    content: "Pause";
+    position: relative;
+    right: 12px;
+    top: 35px;
+    font-weight: 600;
+}
+
+.stop-button::before {
+    content: "Stop";
+    position: relative;
+    right: 0px;
+    top: 35px;
+    font-weight: 600;
+}
+
+.playing-time {
+    margin: 20px 0px;
+    padding-top: 20px;
+}

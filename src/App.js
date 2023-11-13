@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import AudioCapture from './audio-task/audio';
+import VideoCapture from './video-task/video';
 
 function App() {
+  const [isFirst, setIsFirst] = useState(true);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>Assignment tasks for Idzigns</h2>
+      <div className='tab-container'>
+        <div className='tabs' onClick={() => setIsFirst(true)}>Task - 1: Video <input type="radio" checked={isFirst} readOnly /></div>
+        <div className='tabs' onClick={() => setIsFirst(false)}>Task -2 : Audio <input type="radio" checked={!isFirst} readOnly /></div>
+      </div>
+      {isFirst ?
+        <VideoCapture /> :
+        <AudioCapture />}
+      <footer>Created by © Sathya Pandian</footer>
     </div>
   );
 }

@@ -1,0 +1,95 @@
+.video-container {
+    padding: 5px;
+    min-height: 80vh;
+    animation: swipe-in 0.3s ease-in;
+    transition: all ease-in;
+}
+
+@keyframes swipe-in {
+    0% {
+        transform: translateY(100%);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.video-container h1 {
+    color: cornflowerblue;
+}
+
+.video-container button {
+    border: none;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: lightseagreen;
+    cursor: pointer;
+}
+
+.video-player {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+
+.video-player video {
+    width: 80%;
+    height: 70vh;
+}
+
+.video-player button {
+    height: fit-content;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.stop-record {
+    background-color: red !important;
+    border-radius: 50% !important;
+    outline: 2px solid red;
+    outline-offset: 5px;
+    transition: all ease-in-out;
+    animation: pulse 2s infinite;
+}
+
+.starting {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.start-record {
+    background-color: forestgreen !important;
+}
+
+.cancel-record {
+    background-color: orangered !important;
+    width: fit-content;
+    padding: 5px;
+}
+
+.stop-preview {
+    background-color: red !important;
+}
+
+.info {
+    padding-top: 30px;
+}
