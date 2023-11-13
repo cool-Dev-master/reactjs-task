@@ -68,3 +68,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+*********************************************
+
+### This is a task assignment in react js
+
+1.First one is Video task Capturing, recording and previewing recorded video from laptop camera.
+
+2.Second is Audio task where audio file is uploaded and played with waveform UI
