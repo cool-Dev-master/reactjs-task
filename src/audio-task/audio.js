@@ -10,6 +10,7 @@ const AudioCapture = () => {
   const [audioFile, setAudioFile] = useState(null);
 
   useEffect(() => {
+    document.title = 'Audio task';
     const audioElement = audioRef.current;
 
     const createWaveform = () => {
